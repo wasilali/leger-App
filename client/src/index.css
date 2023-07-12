@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.css-t89xny-MuiDataGrid-columnHeaderTitle {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #A78BFA;
+  white-space: nowrap;
+  font-weight: var(--unstable_DataGrid-headWeight);
+}
+
+
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom color scheme */
+@layer base {
+  .color-scheme-1 {
+    @apply bg-blue-900;
+  }
+  .color-scheme-2 {
+    @apply bg-blue-600;
+  }
+  .color-scheme-3 {
+    @apply bg-blue-500;
+  }
+  .color-scheme-4 {
+    @apply bg-blue-400;
+  }
+}
+
+.input-text {
+  @apply px-3 py-1 bg-gray-200 text-gray-700 rounded outline-none focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white;
+}
+
+.btn-login,
+.btn-signup {
+  @apply px-3 py-1 mt-3 text-white bg-blue-500 rounded cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600;
+}
+
+.btn-signup {
+  @apply bg-gray-400;
+}
+@media screen and (min-width: 480px) {
+  .card:nth-child(7n + 1) {
+      grid-column: auto/span 2;
+      grid-row: auto/span 2;
+  }
+}
+@media screen and (max-width: 480px) {
+  .text-\[32px\] {
+      font-size: 26px;
+  }
+}
+
+.prompt::-webkit-scrollbar {
+  width: 5px;
+}
+
+.prompt::-webkit-scrollbar-thumb {
+background-color: #666e75;
+border-radius: 5px;
+}
